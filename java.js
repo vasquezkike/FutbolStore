@@ -119,7 +119,7 @@ document.getElementById('registerForm').addEventListener('submit', async (event)
             // Mensaje de éxito y limpieza de campos
             alert('Cuenta creada exitosamente.');
             document.getElementById('registerForm').reset();
-            //window.location.href = 'principal.html'; // Redirige al usuario a la página principal
+            window.location.href = 'principal.html'; // Redirige al usuario a la página principal
         } catch (error) {
             console.error("Error al crear la cuenta: ", error);
             alert('Error al crear la cuenta. Inténtalo de nuevo.');
