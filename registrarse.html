@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol Store</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .error { color:white; font-size: 0.70em; }
+    </style>
+</head>
+<body>
+    <!-- Header y otros contenidos -->
+    <div class="container">
+        <div class="form">
+            <div class="header">
+                <i class="icon fa fa-lock"></i><h2>Identificación</h2>
+            </div>
+            <h3 class="crear">CREAR CUENTA</h3>
+            <form id="registerForm">
+                <div class="input-field">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Nombre" id="name" name="name">
+                    <span id="nameError" class="error"></span>
+                </div>
+                <div class="input-field">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" placeholder="Apellido" id="lastname" name="lastname">
+                    <span id="lastnameError" class="error"></span>
+                </div>
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="E-mail" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+                </div>
+                <div class="input-field">
+                    <label for="password">Contraseña</label>
+                    <input type="password" placeholder="Contraseña" id="password" name="password">
+                    <span id="passwordError" class="error"></span>
+                </div>
+                <div class="input-field">
+                    <label for="phone">Teléfono</label>
+                    <input type="text" id="phone" name="phone" placeholder="7011-2210" />
+                    <span id="phoneError" class="error"></span>
+                </div>
+                <div class="input-field">
+                    <label for="dui">DUI</label>
+                    <input type="text" id="dui" name="dui" placeholder="24689887-1" />
+                    <span id="duiError" class="error"></span>
+                </div>
+                <button type="submit" class="button"><i class="fa-solid fa-user"></i> Crear cuenta</button>
+            </form>
+        </div>
+        <div class="form">
+            <h3>¿YA TIENES CUENTA?</h3>
+            <form id="loginForm">
+                <div class="input-field">
+                    <label for="email-login">Email</label>
+                    <input type="email" placeholder="E-mail" id="email-login" name="email-login">
+                    <span id="loginEmailError" class="error"></span>
+                </div>
+                <div class="input-field">
+                    <label for="password-login">Contraseña</label>
+                    <input type="password" placeholder="Contraseña" id="password-login" name="password-login">
+                    <span id="loginPasswordError" class="error"></span>
+                </div>
+                <button type="submit" class="button"><i class="fa-solid fa-user"></i> INGRESAR</button>
+            </form>
+        </div>
+    </div>
+
+  
+    <main>
+        <!-- Contenido principal -->
+    </main>
+    <script src="../java/java.js"></script>
+    <script type="module" src="../java/java.js"></script>
+    
+
+</body>
+<footer>
+    <div class="social-icons">
+        <a href="https://mail.google.com/"><i class='bx bx-message-dots'></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,624 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(hsl(22, 100%, 57%), #ff0000);
+    margin: 0;
+    padding: 0;
+}
+
+.carritofooter{
+position:fixed;
+top: 90vh;
+margin-left: 10px;
+
+}
+
+
+header {
+    border-radius: 40px;
+    background: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 30px 0;
+}
+
+.nike, .mapa {
+    width: 65px; /* Ajuste para consistencia */
+}
+
+.mapa {
+    width: 60px;
+    padding-left: 10px;
+}
+
+.futbol, .store {
+    color: #FBED3E; /* Color para "FUTBOL" */
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.store {
+    color: white; /* Color para "STORE" */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.search-bar {
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.fa-solid {
+    padding-right: 10px;
+}
+
+h1 { /* promo */
+    margin: 0 auto;
+    width: 50%;
+    height: auto; /* Cambiado para mejor responsividad */
+    text-align: center; /* Ajuste de alineación para el centro */
+    background: #00ccff;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product button {
+    background: #00ccff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
+    margin: 20px auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #636363;
+    width: 90%;
+    max-width: 600px; /* Añadido para mejorar la visibilidad en pantallas grandes */
+    height: 45px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons a {
+    font-size: 25.5px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para la vista de registro */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container h2 {
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.form {
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+}
+
+.header {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.input-field {
+    margin-bottom: 10px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+.button a {
+    font-size: 10px;
+    color: rgb(9, 248, 9);
+    font-weight: 900;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.form h3 {
+    color: white;
+}
+
+.new-product {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-product__image img {
+    width: 300px;
+    height: auto;
+}
+
+.new-product__details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.new-product__details-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-product__extra-images {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.new-product__extra-images img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.new-product__extra-images-bottom img {
+    width: 100px;
+    height: auto;
+}
+
+.new-product__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.new-product__price {
+    padding-left: 45%;
+    font-size: 24px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.new-product__buy {
+    margin-left: auto; /* Ajuste para alinear el botón a la derecha */
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.new-product__accessory img {
+    width: 160px;
+    height: auto;
+    border-width: 0.5px;
+    border-style: groove;
+    border-color: black;
+}
+
+.new-product__accessory {
+    margin-top: 5%;
+    margin-right: 30%;
+}
+
+.new-product__sizes {
+    display: flex;
+    align-items: center;
+}
+
+.new-product__sizes h2 {
+    margin-right: 10px;
+}
+
+.size {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logo1 {
+    width: 40px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.logo2 {
+    border-radius: 60%;
+    background-color: #000;
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cart-item:hover {
+    background: skyblue;
+    transform: scale(1.02);
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.cart-item:hover img {
+    transform: scale(1.1);
+}
+
+.cart-item h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.cart-item button {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cart-item button:hover {
+    background: #007bff;
+    transform: scale(1.05);
+}
+
+.cart-summary {
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.cart-summary p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-summary button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cart-summary button:hover {
+    background: #218838;
+}
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .product-grid {
+        font-size: 1px;
+        
+        align-items: center;
+    }
+    .product-grid p{
+        font-size: 12px;
+        
+        align-items: center;
+    }
+
+    /* Estilo base para los enlaces de navegación */
+nav ul li a {
+    margin-left:10px;
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 16px; /* Tamaño de fuente por defecto */
+}
+
+/* Estilo para hacer el texto más pequeño */
+nav ul li a {
+    
+    font-size: 14px; /* Ajusta el tamaño del texto a tu preferencia */
+}
+nav ul {
+    margin-left: 40px;
+}
+
+
+    
+main h1{
+    font-size: 12px;
+}
+
+    .product {
+        width: 70%;
+        max-width: 400px;
+    }
+
+   /* Ajusta el contenedor principal para que las imágenes estén dentro de un contenedor adicional */
+.new-product {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%;
+}
+
+/* Añade un contenedor para las imágenes si no existe */
+.new-product__image-container {
+    display: flex; /* Alinea los elementos en fila */
+    gap: 1px; /* Espacio entre las imágenes */
+    margin-bottom: 20px; /* Ajuste según sea necesario */
+}
+
+.new-product__image img {
+    width: 80px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+    .new-product__details {
+        margin-left: 10px;
+        text-align: center;
+    }
+    .new-product__details h2{
+       
+    font-size: 15px;
+    }
+
+    .new-product__extra-images {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .new-product__extra-images img {
+        width: 95%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .new-product__accessory {
+        display: flex; /* Asegúrate de usar flexbox para alinear los elementos */
+        gap: 10px; /* Espacio entre las imágenes, ajusta según sea necesario */
+        margin-top: 5%;
+        margin-right: 30%;
+    }
+   .new-product__buy{
+    margin-right: 30%;
+   }
+
+ 
+   .new-product__buy:hover {
+    background-color: darkgreen; /* Cambia el color del botón al pasar el mouse */
+}
+
+
+    .new-product__accessory img {
+        border-radius: 10px;
+        width: 80px; /* Ajusta el ancho de las imágenes según sea necesario */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-width: 0.5px;
+        border-style: groove;
+        border-color: black;
+    }
+    .new-product___sizes {
+        display: flex; /* Alinea los elementos en fila */
+        align-items: center; /* Alinea verticalmente al centro */
+        gap: 10px; /* Espacio entre las tallas */
+    }
+   
+    
+    .size {
+       font-size: 10px;
+    }
+    .icons a {
+        font-size: 10px;
+        padding-left: 5px;
+}
+    .icons {
+        margin-bottom: 8px;
+        margin-left: 15%;
+    }
+    
+    
+
+    .form {
+        padding-right: 50px;
+         /* Menos padding en pantallas pequeñas */
+    }
+
+    .header h2, .form h3 {
+        font-size: 1.em; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+
+    .input-field input {
+        border-radius: 10px;
+        padding: 10px; /* Menos padding en los inputs */
+    }
+    .form button{
+        margin-left: 30%;
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        padding: 15px 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .new-product__sizes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .size {
+        margin-bottom: 5px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        width: 80px;
+    }
+
+    .cart-item button {
+        width: 100%;
+    }
+
+    .cart-summary {
+        width: 100%;
+    }
+}
